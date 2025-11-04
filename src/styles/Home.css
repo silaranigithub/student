@@ -1,0 +1,166 @@
+.featured-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 50px;
+  min-height: 100vh;
+  gap: 50px;
+}
+
+.featured-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.featured-text-card {
+  margin-bottom: 20px;
+}
+
+.featured-text-card span {
+  background: #f8f9fa;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.featured-name {
+  margin-bottom: 30px;
+}
+
+.featured-name p {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.2;
+}
+
+.typedText {
+  color: #007bff;
+}
+
+.typed-cursor {
+  opacity: 1;
+  color: #007bff;
+}
+
+.typed-cursor.typed-cursor--blink {
+  animation: typedjsBlink 0.7s infinite;
+}
+
+@keyframes typedjsBlink {
+  50% { 
+    opacity: 0.0; 
+  }
+}
+
+.featured-text-info {
+  margin-bottom: 40px;
+}
+
+.featured-text-info p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.featured-text-btn {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.social_icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  background: #007bff;
+  color: white;
+}
+
+.icon i {
+  font-size: 20px;
+}
+
+.featured-image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.image {
+  margin-left: 40%;
+  width: 50%;
+  height: 200px;
+  justify-content: end;
+  border-radius: 200%;
+  overflow: hidden;
+ 
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.image img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+  animation: float 3s ease-in-out infinite;
+}
+
+.scroll-icon-box {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-btn {
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  display: block;
+}
+
+.scroll-btn i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .featured-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .featured-name p {
+    font-size: 2.5rem;
+  }
+  
+  .featured-text-btn {
+    justify-content: center;
+  }
+  .image{
+     width: 110%;
+  height: 200px;
+  }
+}
